@@ -7,6 +7,7 @@ import FooterComponents from "./components/FooterComponents";
 function App() {
   return <div>
     <NavbarComponents/>
+    <HomePages/>
     <Routes>
       <Route path="/" Component={HomePages}/>
       <Route path="/about" Component={AboutPages}/>

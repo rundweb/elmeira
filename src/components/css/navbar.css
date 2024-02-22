@@ -1,0 +1,175 @@
+:root {
+  --color-primary: #1d242d;
+  --color-secondary: #47423d;
+  --color-white: #f2f2f2;
+}
+
+.container {
+  width: 100%;
+  position: fixed;
+  transition: all .3s ease-in-out;
+  z-index: 999;
+}
+
+.active-nav{
+    background-color: #47423d;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px rgba(29, 36, 45, 0.1);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #fff;
+  
+}
+
+.navlist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.navbar-logo h1 {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--color-primary);
+  letter-spacing: 0.5px;
+}
+
+.navlink {
+  padding: 0 14px;
+}
+
+.navlink a {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-secondary);
+}
+
+.navlink .active {
+  color: var(--color-primary);
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.search i {
+  position: absolute;
+  font-size: 24px;
+  color: #1d242d4b;
+  left: 10px;
+}
+
+.search input {
+  height: 40px;
+  width: 260px;
+  border: 1px solid #1d242d4b;
+  border-radius: 10px;
+  padding: 0 20px 0 40px;
+  outline-color: var(--color-secondary);
+}
+
+.icon-keranjang i,
+.icon-user i,
+.mobile-menu i {
+  font-size: 24px;
+  color: var(--color-primary);
+  cursor: pointer;
+  background: #ffffff;
+  box-shadow: 4px 4px 16px #d9d9d9, -4px -4px 16px #ffffff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.icon-keranjang i:hover,
+.icon-user i:hover,
+.mobile-menu i:hover {
+  background: #ffffff;
+  box-shadow: inset 4px 4px 16px #d9d9d9, inset -4px -4px 16px #ffffff;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+
+
+
+@media screen and (max-width:920px) {
+  .mobile-menu{
+    display: block;
+  }
+
+  .navlist{
+    position: fixed;
+    background-color: #ffffff;
+    z-index: -1;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    min-height: 100vh;
+    flex-direction: column;
+    box-shadow: 0 -20px 40px rgba(29, 36, 45, 0.1);
+    transition: all .5s ease-in;
+  }
+
+  .navlist.active{
+    right: 0;
+  }
+
+  .navlink{
+    padding: 30px;
+  }
+
+  .navlink a{
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+}
+
+
+@media screen and (max-width:480px) {
+  .navbar-logo{
+    display: none;
+  }
+
+  .search input{
+    width: 100%;
+  }
+
+  .navlist{
+    width: 100%;
+  }
+
+  .navlink{
+    padding: 20px;
+  }
+} 

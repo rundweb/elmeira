@@ -33,28 +33,28 @@ export const ServiceList = [
     icon: "bx bx-dollar-circle",
     text: "Original Products",
     desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
-    delay: 500
+    delay: 300
   },
   {
     id: 2,
     icon: "bx bx-home-smile",
     text: "Satisfaction Guarantee",
     desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
-    delay: 800
+    delay: 600
   },
   {
     id: 3,
     icon: "bx bx-cart",
     text: "New Arrival Everyday",
     desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
-    delay: 1100
+    delay: 900
   },
   {
     id: 4,
     icon: "bx bxs-truck",
     text: "Fast & Free Shipping",
     desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit",
-    delay: 1400
+    delay: 1200
   },
 ];
 
